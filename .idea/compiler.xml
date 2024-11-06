@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for RuoYi-Vue-Plus" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../Maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../../../Maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../../../Maven/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+          <entry name="$PROJECT_DIR$/../../../Maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.7.7/spring-boot-configuration-processor-2.7.7.jar" />
+        </processorPath>
+        <module name="ruoyi" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
