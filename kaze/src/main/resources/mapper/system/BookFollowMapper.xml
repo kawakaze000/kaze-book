@@ -2,20 +2,19 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.kaze.demo.mapper.TestTreeMapper">
+<mapper namespace="com.kaze.system.mapper.BookFollowMapper">
 
-    <resultMap type="com.kaze.demo.domain.TestTree" id="TestTreeResult">
+    <resultMap type="com.kaze.system.domain.BookFollow" id="BookFollowResult">
         <result property="id" column="id"/>
-        <result property="parentId" column="parent_id"/>
-        <result property="deptId" column="dept_id"/>
         <result property="userId" column="user_id"/>
-        <result property="treeName" column="tree_name"/>
-        <result property="version" column="version"/>
+        <result property="followId" column="follow_id"/>
+        <result property="fanId" column="fan_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userImg" column="user_img"/>
         <result property="createTime" column="create_time"/>
         <result property="createBy" column="create_by"/>
         <result property="updateTime" column="update_time"/>
         <result property="updateBy" column="update_by"/>
-        <result property="delFlag" column="del_flag"/>
     </resultMap>
 
 

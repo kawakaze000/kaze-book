@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaze.system.mapper.BookUserMapper">
+
+    <resultMap type="com.kaze.system.domain.BookUser" id="BookUserResult">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="password" column="password"/>
+        <result property="img" column="img"/>
+        <result property="medal" column="medal"/>
+        <result property="level" column="level"/>
+        <result property="exp" column="exp"/>
+        <result property="vip" column="vip"/>
+        <result property="authentication" column="authentication"/>
+        <result property="follow" column="follow"/>
+        <result property="fans" column="fans"/>
+        <result property="article" column="article"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+
+</mapper>
