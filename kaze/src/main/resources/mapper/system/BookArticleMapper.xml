@@ -10,6 +10,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <result property="userName" column="user_name"/>
         <result property="title" column="title"/>
         <result property="coverImage" column="cover_image"/>
+        <result property="coverImageUrl" column="cover_image_url"/>
         <result property="content" column="content"/>
         <result property="type" column="type"/>
         <result property="topMounted" column="top_mounted"/>

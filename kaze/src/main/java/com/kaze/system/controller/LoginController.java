@@ -1,7 +1,9 @@
 package com.kaze.system.controller;
 
 import cn.dev33.satoken.annotation.SaIgnore;
+import com.kaze.common.annotation.RateLimiter;
 import com.kaze.common.core.domain.R;
+import com.kaze.common.enums.LimitType;
 import com.kaze.system.domain.dto.ForgotPasswordDto;
 import com.kaze.system.domain.dto.LoginDto;
 import com.kaze.system.domain.dto.RegisterDto;
@@ -34,8 +36,8 @@ public class LoginController {
     /**
      * 注册
      */
-    @PostMapping("/register")
     @SaIgnore
+    @PostMapping("/register")
     public R<LoginVo> register(@RequestBody @Validated RegisterDto dto) {
         return R.ok(loginService.register(dto));
     }
@@ -43,8 +45,9 @@ public class LoginController {
     /**
      * 登录
      */
-    @PostMapping("/login")
     @SaIgnore
+    @PostMapping("/login")
+    @RateLimiter(key = "login",limitType = LimitType.IP,count = 3,message = "一分钟内,请勿重复发起多次登录")
     public R<LoginVo> login(@RequestBody @Validated LoginDto dto) {
         return R.ok(loginService.login(dto));
     }
@@ -52,20 +55,18 @@ public class LoginController {
     /**
      * 忘记密码
      */
-    @PostMapping("/forgotPassword")
     @SaIgnore
+    @PostMapping("/forgotPassword")
     public R<Void> forgotPassword(@RequestBody @Validated ForgotPasswordDto dto) {
         loginService.forgotPassword(dto);
         return R.ok();
     }
 
-
-
     /**
      * 邮箱验证码
      */
-    @PostMapping("/captchaEmail")
     @SaIgnore
+    @PostMapping("/captchaEmail")
     public R<Void> emailCode(@RequestBody Map<String, String> map) {
         return loginService.emailCode(map);
     }

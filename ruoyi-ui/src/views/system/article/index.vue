@@ -1,14 +1,14 @@
 <template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
-      <el-form-item label="作者id" prop="userId">
-        <el-input
-          v-model="queryParams.userId"
-          placeholder="请输入作者id"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
+<!--      <el-form-item label="作者id" prop="userId">-->
+<!--        <el-input-->
+<!--          v-model="queryParams.userId"-->
+<!--          placeholder="请输入作者id"-->
+<!--          clearable-->
+<!--          @keyup.enter.native="handleQuery"-->
+<!--        />-->
+<!--      </el-form-item>-->
       <el-form-item label="作者名" prop="userName">
         <el-input
           v-model="queryParams.userName"
@@ -119,23 +119,43 @@
 
     <el-table v-loading="loading" :data="articleList" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" align="center" />
-      <el-table-column label="id" align="center" prop="id" v-if="true"/>
-      <el-table-column label="作者id" align="center" prop="userId" />
+<!--      <el-table-column label="id" align="center" prop="id" v-if="true"/>-->
+<!--      <el-table-column label="作者id" align="center" prop="userId" />-->
       <el-table-column label="作者名" align="center" prop="userName" />
       <el-table-column label="标题" align="center" prop="title" />
-      <el-table-column label="封面图" align="center" prop="coverImage" width="100">
+      <el-table-column label="封面图" align="center" prop="coverImageUrl" width="100">
         <template slot-scope="scope">
-          <image-preview :src="scope.row.coverImage" :width="50" :height="50"/>
+          <image-preview :src="scope.row.coverImageUrl" :width="50" :height="50"/>
         </template>
       </el-table-column>
       <el-table-column label="内容" align="center" prop="content" />
-      <el-table-column label="类型" align="center" prop="type" />
-      <el-table-column label="是否顶置(0: 正常、1: 顶置)" align="center" prop="topMounted" />
+      <el-table-column label="类型" align="center" prop="type">
+        <template scope="scope">
+          <span v-if="scope.row.type==0">首页公告</span>
+          <span v-if="scope.row.type==1">隐私政策</span>
+          <span v-if="scope.row.type==2">安全保障</span>
+          <span v-if="scope.row.type==3">公司简介</span>
+          <span v-if="scope.row.type==4">公告</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="是否顶置" align="center" prop="topMounted">
+        <template scope="scope">
+          <span v-if="scope.row.topMounted==0">正常</span>
+          <span v-if="scope.row.topMounted==1">顶置</span>
+        </template>
+      </el-table-column>
       <el-table-column label="点赞数" align="center" prop="giveLike" />
       <el-table-column label="浏览量" align="center" prop="viewVolume" />
       <el-table-column label="收藏数" align="center" prop="collection" />
       <el-table-column label="评论数" align="center" prop="comment" />
-      <el-table-column label="状态(0: 待审核、1: 通过、2: 驳回、3: 删除)" align="center" prop="status" />
+      <el-table-column label="状态" align="center" prop="status">
+        <template scope="scope">
+          <el-button v-if="scope.row.status==0" type="warning" size="mini" round disabled>待审核</el-button>
+          <el-button v-if="scope.row.status==1" type="success" size="mini" round disabled>通过</el-button>
+          <el-button v-if="scope.row.status==2" type="danger" size="mini" round disabled>驳回</el-button>
+          <el-button v-if="scope.row.status==3">删除</el-button>
+        </template>
+      </el-table-column>
       <el-table-column label="创建时间" align="center" prop="createTime" width="180">
         <template slot-scope="scope">
           <span>{{ parseTime(scope.row.createTime, '{y}-{m}-{d}') }}</span>
@@ -172,6 +192,27 @@
     <!-- 添加或修改文章管理对话框 -->
     <el-dialog :title="title" :visible.sync="open" width="500px" append-to-body>
       <el-form ref="form" :model="form" :rules="rules" label-width="80px">
+        <el-form-item label="标题" prop="title">
+          <el-input v-model="form.title" placeholder="请输入标题" />
+        </el-form-item>
+        <el-form-item label="文章类型" prop="type">
+          <el-select v-model="form.type" placeholder="请选择文章类型" clearable :style="{width: '100%'}">
+            <el-option v-for="(item, index) in articleTypeOptions" :key="index" :label="item.label"
+                       :value="item.value" :disabled="item.disabled"></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item label="封面图" prop="coverImage">
+          <image-upload v-model="form.coverImage"/>
+        </el-form-item>
+        <el-form-item label="内容">
+          <editor v-model="form.content" :min-height="192"/>
+        </el-form-item>
+        <el-form-item label="是否顶置" prop="topMounted">
+          <template>
+            <el-radio v-if="form.topMounted" label="0">正常</el-radio>
+            <el-radio v-if="form.topMounted" label="1">顶置</el-radio>
+          </template>
+        </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button :loading="buttonLoading" type="primary" @click="submitForm">确 定</el-button>
@@ -223,6 +264,25 @@ export default {
         comment: undefined,
         status: undefined,
       },
+      articleTypeOptions: [{
+        "label": "首页公告",
+        "value": 0
+      }, {
+        "label": "隐私政策",
+        "value": 1
+      }, {
+        "label": "安全保障",
+        "value": 2
+      }, {
+        "label": "公司简介",
+        "value": 3
+      }, {
+        "label": "常见问题",
+        "value": 4
+      }, {
+        "label": "公告",
+        "value": 5
+      }],
       // 表单参数
       form: {},
       // 表单校验
@@ -265,6 +325,7 @@ export default {
         userName: undefined,
         title: undefined,
         coverImage: undefined,
+        coverImageUrl: undefined,
         content: undefined,
         type: undefined,
         topMounted: undefined,

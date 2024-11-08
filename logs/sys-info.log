@@ -1,265 +1,295 @@
-2024-02-21 14:26:56 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-02-21 14:26:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-02-21 14:26:56 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 10960 (D:\javaProject\kaze-init\kaze\target\classes started by chen in D:\javaProject\kaze-init)
-2024-02-21 14:26:56 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-02-21 14:26:59 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-02-21 14:26:59 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-02-21 14:26:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-02-21 14:36:45 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-02-21 14:36:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-02-21 14:36:45 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 7836 (D:\javaProject\kaze-init\kaze\target\classes started by chen in D:\javaProject\kaze-init)
-2024-02-21 14:36:45 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-02-21 14:36:47 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-02-21 14:36:47 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-02-21 14:36:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-02-21 14:36:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-02-21 14:36:48 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-02-21 14:36:48 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-02-21 14:36:48 [main] INFO  c.r.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-02-21 14:36:48 [main] INFO  c.ruoyi.framework.config.RedisConfig - 初始化 redis 配置
-2024-02-21 14:36:48 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-02-21 14:36:49 [redisson-netty-2-8] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.168.3.15/192.168.3.15:6379
-2024-02-21 14:36:49 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 192.168.3.15/192.168.3.15:6379
-2024-02-21 14:36:52 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
-2024-02-21 14:36:52 [main] INFO  org.xnio - XNIO version 3.8.7.Final
-2024-02-21 14:36:52 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
-2024-02-21 14:36:52 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
-2024-02-21 14:36:52 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 7.5 seconds (JVM running for 8.664)
-2024-02-21 14:36:53 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
-2024-02-21 14:36:53 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
-2024-02-21 14:36:53 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
-2024-02-21 14:36:53 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
-2024-02-21 14:36:53 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
-2024-02-21 14:36:53 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
-2024-02-21 14:36:53 [main] INFO  c.r.s.runner.SystemApplicationRunner - 初始化OSS配置成功
-2024-02-21 14:36:53 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
-2024-02-21 14:36:53 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
-2024-02-21 14:36:53 [RMI TCP Connection(2)-192.168.3.22] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-21 14:37:00 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
-2024-02-21 14:37:00 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
-2024-02-21 14:37:00 [SpringApplicationShutdownHook] INFO  c.r.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
-2024-02-21 14:37:00 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2024-02-21 14:37:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2024-02-21 14:37:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2024-02-21 14:37:00 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2024-02-21 14:39:01 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-02-21 14:39:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-02-21 14:39:01 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 9404 (D:\javaProject\kaze-init\kaze\target\classes started by chen in D:\javaProject\kaze-init)
-2024-02-21 14:39:01 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-02-21 14:39:03 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-02-21 14:39:03 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-02-21 14:39:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-02-21 14:39:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-02-21 14:39:04 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-02-21 14:39:04 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-02-21 14:39:04 [main] INFO  c.r.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-02-21 14:39:04 [main] INFO  c.ruoyi.framework.config.RedisConfig - 初始化 redis 配置
-2024-02-21 14:39:04 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-02-21 14:39:05 [redisson-netty-2-8] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.168.3.15/192.168.3.15:6379
-2024-02-21 14:39:05 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 192.168.3.15/192.168.3.15:6379
-2024-02-21 14:39:08 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
-2024-02-21 14:39:08 [main] INFO  org.xnio - XNIO version 3.8.7.Final
-2024-02-21 14:39:08 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
-2024-02-21 14:39:08 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
-2024-02-21 14:39:08 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 7.548 seconds (JVM running for 8.688)
-2024-02-21 14:39:09 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
-2024-02-21 14:39:09 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
-2024-02-21 14:39:09 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
-2024-02-21 14:39:09 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
-2024-02-21 14:39:09 [main] INFO  c.r.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
-2024-02-21 14:39:09 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
-2024-02-21 14:39:09 [main] INFO  c.r.s.runner.SystemApplicationRunner - 初始化OSS配置成功
-2024-02-21 14:39:09 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
-2024-02-21 14:39:09 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
-2024-02-21 14:39:10 [RMI TCP Connection(1)-192.168.3.22] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-21 14:39:16 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
-2024-02-21 14:39:16 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
-2024-02-21 14:39:16 [SpringApplicationShutdownHook] INFO  c.r.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
-2024-02-21 14:39:16 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2024-02-21 14:39:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2024-02-21 14:39:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2024-02-21 14:39:16 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2024-11-06 22:42:59 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-11-06 22:42:59 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-11-06 22:42:59 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 17.0.8 on OMEN with PID 23236 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
-2024-11-06 22:42:59 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-11-06 22:43:03 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-11-06 22:43:03 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-11-06 22:43:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-11-06 22:43:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-11-06 22:43:03 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-11-06 22:43:03 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-11-06 22:43:04 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-11-06 22:43:04 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
-2024-11-06 22:43:04 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-11-06 22:43:14 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2024-11-06 22:43:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2024-11-06 22:43:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2024-11-06 22:43:14 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2024-11-06 22:43:18 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-11-06 22:43:19 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-11-06 22:43:19 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 17.0.8 on OMEN with PID 22772 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
-2024-11-06 22:43:19 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-11-06 22:43:20 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-11-06 22:43:21 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-11-06 22:43:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-11-06 22:43:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-11-06 22:43:21 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-11-06 22:43:21 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-11-06 22:43:21 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-11-06 22:43:21 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
-2024-11-06 22:43:21 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-11-06 22:43:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2024-11-06 22:43:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2024-11-06 22:43:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2024-11-06 22:43:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2024-11-06 22:43:57 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-11-06 22:43:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-11-06 22:43:58 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 17.0.8 on OMEN with PID 28280 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
-2024-11-06 22:43:58 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-11-06 22:44:00 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-11-06 22:44:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-11-06 22:44:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-11-06 22:44:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-11-06 22:44:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-11-06 22:44:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-11-06 22:44:00 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-11-06 22:44:00 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
-2024-11-06 22:44:00 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-11-06 22:44:01 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 22:44:01 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 22:44:01 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2024-11-06 22:44:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2024-11-06 22:44:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2024-11-06 22:44:01 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2024-11-06 22:52:33 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-11-06 22:52:33 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-11-06 22:52:33 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 17.0.8 on OMEN with PID 4768 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
-2024-11-06 22:52:33 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-11-06 22:52:35 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-11-06 22:52:35 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-11-06 22:52:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-11-06 22:52:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-11-06 22:52:36 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-11-06 22:52:36 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-11-06 22:52:36 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-11-06 22:52:36 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
-2024-11-06 22:52:36 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-11-06 22:52:36 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 22:52:36 [redisson-netty-2-2] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 22:52:36 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2024-11-06 22:52:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2024-11-06 22:52:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2024-11-06 22:52:36 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2024-11-06 22:56:58 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-11-06 22:56:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-11-06 22:56:58 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 17.0.8 on OMEN with PID 3340 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
-2024-11-06 22:56:58 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-11-06 22:57:00 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-11-06 22:57:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-11-06 22:57:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-11-06 22:57:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-11-06 22:57:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-11-06 22:57:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-11-06 22:57:00 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-11-06 22:57:01 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
-2024-11-06 22:57:01 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-11-06 22:57:01 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 22:57:01 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 22:57:03 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
-2024-11-06 22:57:03 [main] INFO  org.xnio - XNIO version 3.8.7.Final
-2024-11-06 22:57:03 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
-2024-11-06 22:57:03 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
-2024-11-06 22:57:03 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 5.588 seconds (JVM running for 6.221)
-2024-11-06 22:57:03 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
-2024-11-06 22:57:03 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
-2024-11-06 22:57:03 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
-2024-11-06 22:57:03 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
-2024-11-06 22:57:03 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
-2024-11-06 22:57:03 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
-2024-11-06 22:57:03 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
-2024-11-06 22:57:03 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
-2024-11-06 22:57:03 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
-2024-11-06 22:57:04 [RMI TCP Connection(3)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-06 22:57:10 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
-2024-11-06 22:57:10 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
-2024-11-06 22:57:10 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
-2024-11-06 22:57:10 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2024-11-06 22:57:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2024-11-06 22:57:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2024-11-06 22:57:10 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2024-11-06 23:00:14 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-11-06 23:00:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-11-06 23:00:15 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 17.0.8 on OMEN with PID 19720 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
-2024-11-06 23:00:15 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-11-06 23:00:16 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-11-06 23:00:17 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-11-06 23:00:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-11-06 23:00:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-11-06 23:00:17 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-11-06 23:00:17 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-11-06 23:00:17 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-11-06 23:00:17 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
-2024-11-06 23:00:17 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-11-06 23:00:18 [redisson-netty-2-7] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 23:00:18 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 23:00:20 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
-2024-11-06 23:00:20 [main] INFO  org.xnio - XNIO version 3.8.7.Final
-2024-11-06 23:00:20 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
-2024-11-06 23:00:20 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
-2024-11-06 23:00:20 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 5.744 seconds (JVM running for 6.455)
-2024-11-06 23:00:20 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
-2024-11-06 23:00:20 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
-2024-11-06 23:00:20 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
-2024-11-06 23:00:20 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
-2024-11-06 23:00:20 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
-2024-11-06 23:00:20 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
-2024-11-06 23:00:20 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
-2024-11-06 23:00:20 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
-2024-11-06 23:00:20 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
-2024-11-06 23:00:20 [RMI TCP Connection(1)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-06 23:05:52 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
-2024-11-06 23:05:52 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
-2024-11-06 23:05:52 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
-2024-11-06 23:05:52 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2024-11-06 23:05:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2024-11-06 23:05:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2024-11-06 23:05:52 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2024-11-06 23:05:56 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
-2024-11-06 23:05:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2024-11-06 23:05:56 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 17.0.8 on OMEN with PID 9064 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
-2024-11-06 23:05:56 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
-2024-11-06 23:05:58 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2024-11-06 23:05:58 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2024-11-06 23:05:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2024-11-06 23:05:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2024-11-06 23:05:58 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2024-11-06 23:05:58 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2024-11-06 23:05:59 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
-2024-11-06 23:05:59 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
-2024-11-06 23:05:59 [main] INFO  org.redisson.Version - Redisson 3.19.1
-2024-11-06 23:05:59 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 23:05:59 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
-2024-11-06 23:06:01 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
-2024-11-06 23:06:01 [main] INFO  org.xnio - XNIO version 3.8.7.Final
-2024-11-06 23:06:01 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
-2024-11-06 23:06:01 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
-2024-11-06 23:06:01 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 5.696 seconds (JVM running for 6.854)
-2024-11-06 23:06:01 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
-2024-11-06 23:06:01 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
-2024-11-06 23:06:01 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
-2024-11-06 23:06:01 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
-2024-11-06 23:06:01 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
-2024-11-06 23:06:01 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
-2024-11-06 23:06:01 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
-2024-11-06 23:06:01 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
-2024-11-06 23:06:02 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
-2024-11-06 23:06:02 [RMI TCP Connection(3)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-06 23:07:07 [XNIO-1 task-1] INFO  c.k.f.listener.UserActionListener - user doLogin, userId:sys_user:1, token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJ4eDhNeWk1WGVsVzVoTVJIV1JHeGh3ZFVIOTlXSHZKQiJ9.oCgwLnyd8xUkJ3JXhM4LqeTFCLk-9acZnZqG6ro_9Ss
-2024-11-06 23:07:07 [schedule-pool-1] INFO  c.k.s.s.i.SysLogininforServiceImpl - [127.0.0.1]内网IP[admin][Success][登录成功]
-2024-11-06 23:11:07 [XNIO-1 task-4] INFO  c.k.f.listener.UserActionListener - user doLogout, userId:sys_user:1, token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJ4eDhNeWk1WGVsVzVoTVJIV1JHeGh3ZFVIOTlXSHZKQiJ9.oCgwLnyd8xUkJ3JXhM4LqeTFCLk-9acZnZqG6ro_9Ss
-2024-11-06 23:11:07 [schedule-pool-1] INFO  c.k.s.s.i.SysLogininforServiceImpl - [127.0.0.1]内网IP[admin][Logout][退出成功]
-2024-11-06 23:11:34 [XNIO-1 task-4] INFO  c.k.f.listener.UserActionListener - user doLogin, userId:sys_user:1, token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJvVmxCamN0aHZSQ3BRdlU4cDBsa2VXY3JTOFBzV1IzUyJ9.Ty2Z7GFYRxjZG5VHHMsHaINYcAAndQRxEud5PMddquM
-2024-11-06 23:11:34 [schedule-pool-2] INFO  c.k.s.s.i.SysLogininforServiceImpl - [192.168.31.46]内网IP[admin][Success][登录成功]
-2024-11-06 23:12:18 [XNIO-1 task-1] INFO  c.k.f.listener.UserActionListener - user doLogin, userId:sys_user:1, token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJqUEpNNkZXazZiNjN6MHY1V2dGdUlhaDJadXBxSkdOVyJ9.yjcypLeFCFsUUh0_mhPuviTPK0dar1uGzWHjUGA-euY
-2024-11-06 23:12:18 [schedule-pool-1] INFO  c.k.s.s.i.SysLogininforServiceImpl - [192.168.31.46]内网IP[admin][Success][登录成功]
+2024-11-08 13:12:30 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 13:12:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 13:12:30 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 13640 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 13:12:30 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 13:16:04 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 13:16:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 13:16:04 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 27308 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 13:16:04 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 13:16:09 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-11-08 13:16:09 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-11-08 13:16:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-11-08 13:16:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-11-08 13:16:10 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-11-08 13:16:10 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-11-08 13:16:11 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
+2024-11-08 13:16:11 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
+2024-11-08 13:16:11 [main] INFO  org.redisson.Version - Redisson 3.19.1
+2024-11-08 13:16:12 [redisson-netty-2-6] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 13:16:12 [redisson-netty-2-2] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 13:16:15 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
+2024-11-08 13:16:15 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2024-11-08 13:16:15 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2024-11-08 13:16:16 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2024-11-08 13:16:16 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 11.569 seconds (JVM running for 12.555)
+2024-11-08 13:16:16 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
+2024-11-08 13:16:16 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
+2024-11-08 13:16:16 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
+2024-11-08 13:16:16 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
+2024-11-08 13:16:16 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
+2024-11-08 13:16:16 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
+2024-11-08 13:16:16 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2024-11-08 13:16:16 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2024-11-08 13:16:16 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2024-11-08 13:16:16 [RMI TCP Connection(2)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08 13:19:34 [XNIO-1 task-1] INFO  c.k.f.listener.UserActionListener - user doLogin, userId:sys_user:1, token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJEQlZ2NERBM0NwckNJT3ZHZ3hNVkJUVjAyc29qaFFCUyJ9.bxGWuYMAEJ8oqZmK2WQs4wOaZBKDgcUwgX2t_zsKmQ0
+2024-11-08 13:19:34 [schedule-pool-1] INFO  c.k.s.s.i.SysLogininforServiceImpl - [127.0.0.1]内网IP[admin][Success][登录成功]
+2024-11-08 13:56:30 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
+2024-11-08 13:56:30 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-08 13:56:30 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2024-11-08 13:56:30 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-11-08 13:56:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-11-08 13:56:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-11-08 13:56:30 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-11-08 13:56:38 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 13:56:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 13:56:38 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 29136 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 13:56:38 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 13:56:41 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-11-08 13:56:41 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-11-08 13:56:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-11-08 13:56:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-11-08 13:56:42 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-11-08 13:56:42 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-11-08 13:56:42 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
+2024-11-08 13:56:42 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
+2024-11-08 13:56:42 [main] INFO  org.redisson.Version - Redisson 3.19.1
+2024-11-08 13:56:43 [redisson-netty-2-7] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 13:56:43 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 13:56:46 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
+2024-11-08 13:56:46 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2024-11-08 13:56:46 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2024-11-08 13:56:46 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2024-11-08 13:56:47 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 8.586 seconds (JVM running for 9.724)
+2024-11-08 13:56:47 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
+2024-11-08 13:56:47 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
+2024-11-08 13:56:47 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
+2024-11-08 13:56:47 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
+2024-11-08 13:56:47 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
+2024-11-08 13:56:47 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
+2024-11-08 13:56:47 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2024-11-08 13:56:47 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2024-11-08 13:56:47 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2024-11-08 13:56:47 [RMI TCP Connection(1)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08 14:10:23 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
+2024-11-08 14:10:23 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-08 14:10:23 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2024-11-08 14:10:23 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-11-08 14:10:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-11-08 14:10:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-11-08 14:10:23 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-11-08 14:10:26 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 14:10:26 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 29344 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 14:10:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 14:10:26 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 14:10:29 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-11-08 14:10:29 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-11-08 14:10:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-11-08 14:10:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-11-08 14:10:29 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-11-08 14:10:29 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-11-08 14:10:30 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
+2024-11-08 14:10:30 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
+2024-11-08 14:10:30 [main] INFO  org.redisson.Version - Redisson 3.19.1
+2024-11-08 14:10:31 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 14:10:31 [redisson-netty-2-2] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 14:10:34 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
+2024-11-08 14:10:35 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2024-11-08 14:10:35 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2024-11-08 14:10:35 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2024-11-08 14:10:35 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 9.118 seconds (JVM running for 10.483)
+2024-11-08 14:10:35 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
+2024-11-08 14:10:35 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
+2024-11-08 14:10:35 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
+2024-11-08 14:10:35 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
+2024-11-08 14:10:35 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
+2024-11-08 14:10:35 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
+2024-11-08 14:10:35 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2024-11-08 14:10:35 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2024-11-08 14:10:35 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2024-11-08 14:10:35 [RMI TCP Connection(1)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08 14:15:55 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
+2024-11-08 14:15:55 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-08 14:15:55 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2024-11-08 14:15:55 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-11-08 14:15:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-11-08 14:15:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-11-08 14:15:55 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-11-08 14:16:00 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 14:16:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 14:16:01 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 26196 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 14:16:01 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 14:16:03 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-11-08 14:16:03 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-11-08 14:16:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-11-08 14:16:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-11-08 14:16:04 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-11-08 14:16:04 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-11-08 14:16:04 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
+2024-11-08 14:16:04 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
+2024-11-08 14:16:04 [main] INFO  org.redisson.Version - Redisson 3.19.1
+2024-11-08 14:16:05 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 14:16:05 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 14:16:09 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
+2024-11-08 14:16:09 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2024-11-08 14:16:09 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2024-11-08 14:16:09 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2024-11-08 14:16:09 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 8.533 seconds (JVM running for 9.622)
+2024-11-08 14:16:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
+2024-11-08 14:16:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
+2024-11-08 14:16:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
+2024-11-08 14:16:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
+2024-11-08 14:16:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
+2024-11-08 14:16:09 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
+2024-11-08 14:16:09 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2024-11-08 14:16:09 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2024-11-08 14:16:09 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2024-11-08 14:16:09 [RMI TCP Connection(2)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08 14:18:11 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
+2024-11-08 14:18:11 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-08 14:18:11 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2024-11-08 14:18:11 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-11-08 14:18:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-11-08 14:18:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-11-08 14:18:11 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-11-08 14:23:52 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 14:23:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 14:23:52 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 27940 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 14:23:52 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 14:23:54 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-11-08 14:23:54 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-11-08 14:23:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-11-08 14:23:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-11-08 14:23:55 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-11-08 14:23:55 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-11-08 14:23:55 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
+2024-11-08 14:23:56 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
+2024-11-08 14:23:56 [main] INFO  org.redisson.Version - Redisson 3.19.1
+2024-11-08 14:23:56 [redisson-netty-2-6] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 14:23:57 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 14:24:00 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
+2024-11-08 14:24:00 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2024-11-08 14:24:00 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2024-11-08 14:24:00 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2024-11-08 14:24:00 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 8.482 seconds (JVM running for 9.608)
+2024-11-08 14:24:00 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
+2024-11-08 14:24:00 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
+2024-11-08 14:24:00 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
+2024-11-08 14:24:00 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
+2024-11-08 14:24:00 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
+2024-11-08 14:24:00 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
+2024-11-08 14:24:00 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2024-11-08 14:24:00 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2024-11-08 14:24:00 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2024-11-08 14:24:01 [RMI TCP Connection(1)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08 14:34:57 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
+2024-11-08 14:34:57 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-08 14:34:57 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2024-11-08 14:34:57 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-11-08 14:34:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-11-08 14:34:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-11-08 14:34:57 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-11-08 14:59:06 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 14:59:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 14:59:06 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 29996 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 14:59:06 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 14:59:09 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-11-08 14:59:09 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-11-08 14:59:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-11-08 14:59:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-11-08 14:59:09 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-11-08 14:59:09 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-11-08 14:59:10 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
+2024-11-08 14:59:10 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
+2024-11-08 14:59:10 [main] INFO  org.redisson.Version - Redisson 3.19.1
+2024-11-08 14:59:11 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 14:59:11 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 14:59:14 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
+2024-11-08 14:59:14 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2024-11-08 14:59:14 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2024-11-08 14:59:14 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2024-11-08 14:59:14 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 8.527 seconds (JVM running for 9.589)
+2024-11-08 14:59:14 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
+2024-11-08 14:59:14 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
+2024-11-08 14:59:14 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
+2024-11-08 14:59:14 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
+2024-11-08 14:59:14 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
+2024-11-08 14:59:14 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
+2024-11-08 14:59:14 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2024-11-08 14:59:14 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2024-11-08 14:59:14 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2024-11-08 14:59:15 [RMI TCP Connection(1)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08 14:59:58 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
+2024-11-08 14:59:58 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-08 14:59:58 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2024-11-08 14:59:58 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-11-08 14:59:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-11-08 14:59:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-11-08 14:59:58 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-11-08 15:00:00 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 15:00:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 15:00:01 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 17720 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 15:00:01 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 15:00:03 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-11-08 15:00:03 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-11-08 15:00:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-11-08 15:00:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-11-08 15:00:04 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-11-08 15:00:04 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-11-08 15:00:04 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
+2024-11-08 15:00:04 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
+2024-11-08 15:00:04 [main] INFO  org.redisson.Version - Redisson 3.19.1
+2024-11-08 15:00:05 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 15:00:05 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 15:00:08 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
+2024-11-08 15:00:08 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2024-11-08 15:00:08 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2024-11-08 15:00:08 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2024-11-08 15:00:08 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 8.1 seconds (JVM running for 9.134)
+2024-11-08 15:00:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
+2024-11-08 15:00:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
+2024-11-08 15:00:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
+2024-11-08 15:00:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
+2024-11-08 15:00:09 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
+2024-11-08 15:00:09 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
+2024-11-08 15:00:09 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2024-11-08 15:00:09 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2024-11-08 15:00:09 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2024-11-08 15:00:09 [RMI TCP Connection(1)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08 15:07:17 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.22.Final
+2024-11-08 15:07:17 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-08 15:07:17 [SpringApplicationShutdownHook] INFO  c.k.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2024-11-08 15:07:17 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-11-08 15:07:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-11-08 15:07:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-11-08 15:07:17 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-11-08 15:07:19 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to System property 'spring.devtools.restart.enabled' being set to false
+2024-11-08 15:07:19 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-11-08 15:07:19 [main] INFO  com.kaze.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_381 on OMEN with PID 12880 (D:\project\javaProject\kaze-book\kaze\target\classes started by chen in D:\project\javaProject\kaze-book)
+2024-11-08 15:07:19 [main] INFO  com.kaze.RuoYiApplication - The following 1 profile is active: "dev"
+2024-11-08 15:07:21 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-11-08 15:07:22 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-11-08 15:07:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-11-08 15:07:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-11-08 15:07:22 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-11-08 15:07:22 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-11-08 15:07:22 [main] INFO  c.k.framework.config.JacksonConfig - 初始化 jackson 配置
+2024-11-08 15:07:23 [main] INFO  c.kaze.framework.config.RedisConfig - 初始化 redis 配置
+2024-11-08 15:07:23 [main] INFO  org.redisson.Version - Redisson 3.19.1
+2024-11-08 15:07:23 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 15:07:23 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-08 15:07:27 [main] INFO  io.undertow - starting server: Undertow - 2.2.22.Final
+2024-11-08 15:07:27 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2024-11-08 15:07:27 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2024-11-08 15:07:27 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2024-11-08 15:07:27 [main] INFO  com.kaze.RuoYiApplication - Started RuoYiApplication in 7.773 seconds (JVM running for 8.825)
+2024-11-08 15:07:27 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => minio
+2024-11-08 15:07:27 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qiniu
+2024-11-08 15:07:27 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => aliyun
+2024-11-08 15:07:27 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => qcloud
+2024-11-08 15:07:27 [main] INFO  c.k.s.s.impl.SysOssConfigServiceImpl - 发布刷新OSS配置 => image
+2024-11-08 15:07:27 [main] INFO  com.kaze.oss.factory.OssFactory - 初始化OSS工厂
+2024-11-08 15:07:27 [main] INFO  c.k.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2024-11-08 15:07:27 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2024-11-08 15:07:27 [main] INFO  c.k.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2024-11-08 15:07:27 [RMI TCP Connection(2)-192.168.31.199] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'

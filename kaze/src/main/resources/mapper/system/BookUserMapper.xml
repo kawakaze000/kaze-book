@@ -18,6 +18,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <result property="follow" column="follow"/>
         <result property="fans" column="fans"/>
         <result property="article" column="article"/>
+        <result property="type" column="type"/>
         <result property="createTime" column="create_time"/>
         <result property="updateTime" column="update_time"/>
         <result property="createBy" column="create_by"/>

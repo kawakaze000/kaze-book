@@ -49,7 +49,13 @@ public class BookArticleVo {
      * 封面图
      */
     @ExcelProperty(value = "封面图")
-    private String coverImage;
+    private Long coverImage;
+
+    /**
+     * 封面图url
+     */
+    @ExcelProperty(value = "封面图url")
+    private String coverImageUrl;
 
     /**
      * 内容

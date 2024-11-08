@@ -100,6 +100,12 @@ public class BookUserVo {
     private Integer article;
 
     /**
+     * 用户类型
+     */
+    @ExcelProperty(value = "用户类型")
+    private Integer type;
+
+    /**
      * 
      */
     @ExcelProperty(value = "")

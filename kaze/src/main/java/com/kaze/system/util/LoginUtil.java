@@ -2,8 +2,8 @@ package com.kaze.system.util;
 
 import com.kaze.common.utils.StpUserUtil;
 import com.kaze.common.utils.spring.SpringUtils;
-//import com.kaze.system.domain.MtIndexUser;
-//import com.kaze.system.mapper.MtIndexUserMapper;
+import com.kaze.system.domain.BookUser;
+import com.kaze.system.mapper.BookUserMapper;
 
 public class LoginUtil {
 
@@ -11,9 +11,9 @@ public class LoginUtil {
         return StpUserUtil.getLoginIdAsLong();
     }
 
-//    public static MtIndexUser getUser(){
-//        MtIndexUserMapper indexUserMapper = SpringUtils.getBean(MtIndexUserMapper.class);
-//        return indexUserMapper.selectById(StpUserUtil.getLoginIdAsLong());
-//    }
+    public static BookUser getUser(){
+        BookUserMapper userMapper = SpringUtils.getBean(BookUserMapper.class);
+        return userMapper.selectById(StpUserUtil.getLoginIdAsLong());
+    }
 
 }

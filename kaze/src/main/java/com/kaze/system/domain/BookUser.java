@@ -74,5 +74,9 @@ public class BookUser extends BaseEntity {
      * 文章数
      */
     private Integer article;
+    /**
+     * 用户类型
+     */
+    private Integer type;
 
 }

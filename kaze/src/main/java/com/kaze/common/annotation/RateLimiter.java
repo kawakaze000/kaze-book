@@ -33,4 +33,9 @@ public @interface RateLimiter {
      * 限流类型
      */
     LimitType limitType() default LimitType.DEFAULT;
+
+    /**
+     * 提示消息 支持国际化 格式为 {code}
+     */
+    String message() default "{rate.limiter.message}";
 }

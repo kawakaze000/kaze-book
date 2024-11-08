@@ -30,6 +30,7 @@ import java.util.Date;
 import java.util.Map;
 
 import static com.kaze.system.constant.EmailType.EMAIL_CODE;
+import static com.kaze.system.enums.ErrorCode.EMAIL_REPEAT_SEND;
 
 /**
  * @author chen
@@ -62,35 +63,18 @@ public class LoginServiceImpl implements ILoginService {
     }
 
     @Override
-    public R emailCode(Map<String, String> map) {
-//        if (!isProd) return R.ok();
+    public R<Void> emailCode(Map<String, String> map) {
         String email = map.get("email");
-        String uuid = map.get("uuid");
-        String imgCode = map.get("imgCode");
         if (StringUtils.isBlank(email)) {
             return R.fail(MessageUtils.message("user.email.not.blank"));
         }
-        if (StringUtils.isBlank(uuid)) {
-            return R.fail(MessageUtils.message("code.id.not.null"));
-        }
-        if (StringUtils.isBlank(imgCode)) {
-            return R.fail(MessageUtils.message("user.image.code.not.null"));
-        }
 
-        String verifyKey = CacheConstants.CAPTCHA_CODE_KEY + uuid;
-        if (!RedisUtils.isExistsObject(verifyKey)) {
-            return R.fail(MessageUtils.message("user.captcha.expire"));
-        }
-
-        String verifyCode = RedisUtils.getCacheObject(verifyKey);
-        if (!verifyCode.equals(imgCode)) {
-            return R.fail(MessageUtils.message("user.captcha.error"));
-        }
-
-//        if (!mailProperties.getEnabled()) {
-//            return R.fail("当前系统没有开启邮箱功能！");
-//        }
         String key = CacheConstants.CAPTCHA_CODE_KEY + email;
+
+        if (RedisUtils.isExistsObject(key)) {
+            return R.fail(EMAIL_REPEAT_SEND.getCode(), EMAIL_REPEAT_SEND.getMsg());
+        }
+
         String code = RandomUtil.randomNumbers(4);
         RedisUtils.setCacheObject(key, code, Duration.ofMinutes(Constants.CAPTCHA_EXPIRATION));
         try {

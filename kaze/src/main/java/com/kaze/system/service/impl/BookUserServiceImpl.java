@@ -1,5 +1,6 @@
 package com.kaze.system.service.impl;
 
+import cn.dev33.satoken.secure.BCrypt;
 import cn.hutool.core.bean.BeanUtil;
 import com.kaze.common.core.page.TableDataInfo;
 import com.kaze.common.core.domain.PageQuery;
@@ -67,6 +68,7 @@ public class BookUserServiceImpl implements IBookUserService {
         lqw.eq(StringUtils.isNotBlank(bo.getImg()), BookUser::getImg, bo.getImg());
         lqw.eq(bo.getMedal() != null, BookUser::getMedal, bo.getMedal());
         lqw.eq(bo.getLevel() != null, BookUser::getLevel, bo.getLevel());
+        lqw.eq(bo.getType() != null, BookUser::getType, bo.getType());
         lqw.eq(StringUtils.isNotBlank(bo.getAuthentication()), BookUser::getAuthentication, bo.getAuthentication());
         lqw.ge(bo.getFans() != null, BookUser::getFans, bo.getFans());
         lqw.ge(bo.getArticle() != null, BookUser::getArticle, bo.getArticle());
@@ -80,6 +82,10 @@ public class BookUserServiceImpl implements IBookUserService {
     public Boolean insertByBo(BookUserBo bo) {
         BookUser add = BeanUtil.toBean(bo, BookUser.class);
         validEntityBeforeSave(add);
+
+        add.setType(1);
+        add.setPassword(BCrypt.hashpw("123456"));
+
         boolean flag = baseMapper.insert(add) > 0;
         if (flag) {
             bo.setId(add.getId());

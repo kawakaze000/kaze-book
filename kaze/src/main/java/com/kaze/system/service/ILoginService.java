@@ -20,5 +20,5 @@ public interface ILoginService {
 
     void forgotPassword(ForgotPasswordDto dto);
 
-    R emailCode(Map<String, String> map);
+    R<Void> emailCode(Map<String, String> map);
 }

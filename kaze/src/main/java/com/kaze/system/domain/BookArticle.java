@@ -39,7 +39,11 @@ public class BookArticle extends BaseEntity {
     /**
      * 封面图
      */
-    private String coverImage;
+    private Long coverImage;
+    /**
+     * 封面图url
+     */
+    private String coverImageUrl;
     /**
      * 内容
      */

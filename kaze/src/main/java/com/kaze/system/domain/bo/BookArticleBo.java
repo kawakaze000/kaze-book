@@ -43,7 +43,7 @@ public class BookArticleBo extends BaseEntity {
     /**
      * 封面图
      */
-    private String coverImage;
+    private Long coverImage;
 
     /**
      * 内容
@@ -84,7 +84,6 @@ public class BookArticleBo extends BaseEntity {
     /**
      * 状态(0: 待审核、1: 通过、2: 驳回、3: 删除)
      */
-    @NotNull(message = "状态(0: 待审核、1: 通过、2: 驳回、3: 删除)不能为空", groups = { AddGroup.class, EditGroup.class })
     private Integer status;
 
 

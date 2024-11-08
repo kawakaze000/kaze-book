@@ -130,7 +130,11 @@
       <el-table-column label="id" align="center" prop="id" v-if="false"/>
       <el-table-column label="昵称" align="center" prop="name" />
       <el-table-column label="邮箱" align="center" prop="email" />
-      <el-table-column label="头像" align="center" prop="img" />
+      <el-table-column label="头像" align="center" prop="img" width="100">
+        <template slot-scope="scope">
+          <image-preview :src="scope.row.img" :width="50" :height="50"/>
+        </template>
+      </el-table-column>
       <el-table-column label="勋章" align="center" prop="medal" />
       <el-table-column label="等级" align="center" prop="level" />
       <el-table-column label="经验值" align="center" prop="exp" />
@@ -143,6 +147,12 @@
       <el-table-column label="关注数" align="center" prop="follow" />
       <el-table-column label="粉丝数" align="center" prop="fans" />
       <el-table-column label="文章数" align="center" prop="article" />
+      <el-table-column label="用户类型" align="center" prop="type">
+        <template scope="scope">
+          <span v-if="scope.row.type == 0">普通用户</span>
+          <span v-if="scope.row.type == 1">内部用户</span>
+        </template>
+      </el-table-column>
       <el-table-column label="" align="center" prop="createTime" width="180">
         <template slot-scope="scope">
           <span>{{ parseTime(scope.row.createTime, '{y}-{m}-{d}') }}</span>
@@ -228,6 +238,7 @@ export default {
         authentication: undefined,
         fans: undefined,
         article: undefined,
+        type: undefined,
       },
       // 表单参数
       form: {},
